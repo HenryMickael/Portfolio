@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #003366; */
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  /* min-height: 100vh; */
+  width: 90%;
+  margin: auto;
+}
+h1 {
+  /* color: #ff6600; */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+p {
+  /* color: #ffa500; */
+  color: white;
+  font-size: 0.2em;
+}
+h2 {
+  color: #ff6600;
+  font-size: 0.7em;
+}
+span {
+  color: #ff6600;
+}
+/* ****************************Navbar************************************* */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  display: flex;
+  background-color: black;
+  padding-top: 5px;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ff6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar img {
+  height: 5em;
+}
+.containNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.containNav a {
+  font-size: 20%;
+  margin: 0 5px;
+}
+
+/* **************************Main********************************** */
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 3.5em;
+  margin-bottom: 100vh;
+}
+.presentation {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* test  */
+/* #typed-title {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+} */
+/* ****************************photo *********************************/
+.container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+.container img {
+  border-radius: 0 25px 0 25px;
+  background: linear-gradient(145deg, #ff6600, #f0f0f0);
+  box-shadow: 20px 20px 60px #ff6600, -40px -30px 60px #ff660025;
+}
+/* ****************************competence****************************** */
+
+#competence ul {
+  margin-top: 2em;
+  margin-bottom: 100vh;
+  width: 100%;
+  display: grid;
+  grid: repeat(2, 70px) / auto-flow 70px;
+  list-style-type: none;
+  justify-content: center;
+}
+#competence img {
+  height: 50px;
+}
+/* ******************************contact********************************** */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#contact form {
+  width: 30%;
+}
+
+#contact input[type="submit"] {
+  margin-top: 10px;
+}
