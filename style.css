@@ -76,18 +76,6 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-/* test  */
-/* #typed-title {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 4s steps(40);
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-} */
 /* ****************************photo *********************************/
 .container {
   height: 120px;
