@@ -6,50 +6,76 @@ fetch("/travaux.json")
       const card = document.createElement("div");
       card.className = "col-md-4";
       card.innerHTML = `
-        <div class="card">
-          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="${
-                  travail.image1
-                }" class="d-block w-100" alt="Image 1">
-              </div>
-              <div class="carousel-item">
-                <img src="${
-                  travail.image2
-                }" class="d-block w-100" alt="Image 2">
-              </div>
-              <div class="carousel-item">
-                <img src="${
-                  travail.image3
-                }" class="d-block w-100" alt="Image 3">
-              </div>
-            </div>
-          </div>
+        <div class="card card-fixed-height">
+          <img src="${
+            travail.image1
+          }" class="card-img-top" alt="Image presentation d'un site">
           <div class="card-body">
-            <h5 class="card-title">${travail.nom}</h5>
+            <h3 class="card-title">${travail.nom}</h3>
             <p class="card-text">${travail.description}</p>
-            <a href="#" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#site-info-${index}" aria-expanded="false" aria-controls="site-info-${index}">
-              <i class="fas fa-chevron-down"></i>
-            </a>
-            <a href="${
-              travail.lienSite
-            }" target="_blank" class="btn btn-primary">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-${index}">
+              Curieux?
+            </button>
           </div>
-          <div class="collapse" id="site-info-${index}">
-            <div class="card-body">
-              <p>Informations supplémentaires sur le site ${index + 1}.</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-${index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">${travail.nom}</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="carouselExample-${index}" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="${
+                      travail.image1
+                    }" class="img-fluid" alt="Photo de ${travail.image1} ">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="${
+                      travail.image2
+                    }" class="img-fluid" alt="Photo de ${travail.image2} ">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="${
+                      travail.image3
+                    }" class="img-fluid" alt="Photo de ${travail.image3} ">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-${index}" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-${index}" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p>${travail.descriptionComplete}</p>
+              <p><strong>Technologies utilisées:</strong></p>
+              <ul>
+              ${travail.techUtilise.map((tech) => `<li>${tech}</li>`).join("")}
+            </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="${
+                travail.lienSite
+              }" target="_blank" class="btn btn-primary">
+                Voir le site
+              </a>
               <a href="${
                 travail.lienGithub
               }" target="_blank" class="btn btn-secondary">
-                <i class="fab fa-github"></i>
+                Voir sur Code
               </a>
             </div>
           </div>
         </div>
-      `;
+      </div>`;
       travauxContainer.appendChild(card);
     });
   });

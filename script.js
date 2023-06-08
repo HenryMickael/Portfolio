@@ -1,29 +1,10 @@
-// Animation text presentation
-const titleText = `Suite à une reconversion professionnelle, j'ai décidé de devenir
-développeur web front-end. Mon objectif : apprendre en permanence et
-évoluer dans ce domaine passionnant.`;
-const typedTitleElement = document.getElementById("typed-title");
-
-function typeTitle() {
-  let index = 0;
-  const typingInterval = setInterval(() => {
-    typedTitleElement.textContent += titleText[index];
-    index++;
-    if (index >= titleText.length) {
-      clearInterval(typingInterval);
-    }
-  }, 40);
-}
-
-setTimeout(typeTitle, 1000);
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
-// Retouren haut de page
+// Retour en haut de page
 window.addEventListener("scroll", function () {
   var scrollTopBtn = document.getElementById("scrollTopBtn");
   if (window.scrollY > 300) {
@@ -32,8 +13,22 @@ window.addEventListener("scroll", function () {
     scrollTopBtn.style.display = "none";
   }
 });
-// btn retourner
-function flipImage() {
-  var flipContainer = document.querySelector(".flip-container");
-  flipContainer.classList.toggle("flipped");
+// Retournement card
+function flipCard() {
+  var card = document.getElementById("flip-card");
+  card.classList.toggle("flipped");
 }
+// card s'adapte a l'image
+window.addEventListener("load", function () {
+  const cardPresentation = document.querySelector(".card-presentation");
+  const cardFrontImg = document.querySelector(".card-front img");
+
+  function setCardHeight() {
+    const imgHeight = cardFrontImg.offsetHeight;
+    cardPresentation.style.height = imgHeight + "px";
+  }
+
+  setCardHeight();
+
+  window.addEventListener("resize", setCardHeight);
+});
