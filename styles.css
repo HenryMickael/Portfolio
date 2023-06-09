@@ -184,12 +184,21 @@ h2 {
 .card-fixed-height {
   height: 400px;
 }
+#travaux .card-text {
+  margin: 0;
+}
 /* Modal travaux ******************************************************/
+.modal-content {
+  border-radius: 10px;
+}
 .modal-title {
   color: #ff6600 !important;
 }
 .modal-header .btn-close {
   background-color: #ff6600;
+}
+.modal-header .btn-close {
+  margin-right: 5px;
 }
 .carousel-item {
   height: 400px;
@@ -205,6 +214,16 @@ h2 {
 /* Contact ************************************************************/
 #contact {
   min-height: 60vh;
+}
+.contact-title {
+  padding-bottom: 1em;
+}
+#contact p {
+  font-size: large;
+}
+.email {
+  color: #ff6600;
+  font-size: 1.5em;
 }
 /* Footer  ************************************************************/
 footer {
