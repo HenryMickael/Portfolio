@@ -14,11 +14,11 @@
     "image1": "img/imgSite/2.png",
     "image2": "img/imgSite/5.png",
     "image3": "img/imgSite/6.png",
-    "nom": "Elite Cut & Color",
+    "nom": "Salon de coiffure ",
     "description": "( En construction ) Site vitrine d'un salon de coiffure",
     "descriptionComplete": "Texte de présentation du site avec explication a faire",
     "lienSite": "lien-site1",
-    "lienGithub": "https://github.com/HenryMickael/ElitebyAS",
+    "lienGithub": "https://github.com/HenryMickael/",
     "techUtilise": ["Bootstrap", "Sass", "NodeJs"]
   },
   {
