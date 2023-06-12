@@ -6,7 +6,7 @@ function scrollToTop() {
 }
 // Retour en haut de page
 window.addEventListener("scroll", function () {
-  var scrollTopBtn = document.getElementById("scrollTopBtn");
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
   if (window.scrollY > 300) {
     scrollTopBtn.style.display = "block";
   } else {
@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 });
 // Retournement card
 function flipCard() {
-  var card = document.getElementById("flip-card");
+  const card = document.getElementById("flip-card");
   card.classList.toggle("flipped");
 }
 // card s'adapte a l'image

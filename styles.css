@@ -225,6 +225,9 @@ h2 {
   color: #ff6600;
   font-size: 1.5em;
 }
+.email:hover {
+  color: black;
+}
 /* Footer  ************************************************************/
 footer {
   padding: 20px;

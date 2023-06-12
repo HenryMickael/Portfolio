@@ -1,66 +1,72 @@
-/* Global */
+/* Global ************************************************************/
 * {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Background */
 .bg-light {
   background-color: #e2e2e257 !important;
 }
+
 #competence,
 #contact {
   background-color: #bebcbc48;
 }
 
-/* Buttons */
 .btn-primary {
   background-color: #ff6600;
+  color: black;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.btn-primary:hover {
-  background: linear-gradient(to right, #f7b733, #ff6600);
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ff6600;
+  color: black;
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* Sections */
 section {
   min-height: 400px;
 }
 
-/* Headings */
 h2 {
   color: #ff6600;
+  font-size: 3em;
 }
 
-/* Navbar */
+/* Navbar  ***********************************************************/
 .navbar {
   padding: 10px 20px;
   font-size: large;
 }
+
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #ff6600;
 }
-.navbar-dark .navbar-nav .nav-link.active {
-  border-bottom: solid 2px #ff6600;
-}
 
-/* Scroll-to-Top Button */
 #scrollTopBtn {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   display: none;
 }
 
-/* Presentation */
+#scrollTopBtn i {
+  color: black;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* presentation  *****************************************************/
 .presentation span {
   color: #ff6600;
 }
 
-/* Card Retournement */
+/* retournement card  */
 .card-presentation {
   perspective: 1000px;
   height: 100%;
@@ -68,6 +74,7 @@ h2 {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -75,6 +82,7 @@ h2 {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .card-front,
 .card-back {
   position: absolute;
@@ -84,50 +92,182 @@ h2 {
   height: 100%;
   backface-visibility: hidden;
 }
+
 .card-back {
   transform: rotateY(180deg);
   background-color: #c0bebe;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
+
+.card-back h2 {
+  font-size: 2.5em;
+  color: black !important;
+}
+
+.card-back .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .card-back .card-title {
   padding: 20px;
 }
+
 .card-back .card-text {
   padding: 30px 0;
   margin: 10px;
+  overflow-y: auto;
 }
+
 .flipped .card-inner {
   transform: rotateY(180deg);
 }
 
-/* Competence */
+/* competence  ********************************************************/
+#competence {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* Card Travaux */
+.competence-title {
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+#competence .card {
+  background-color: #c0bebe;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2em;
+}
+
+#competence .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 6px 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.skill {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Projet *************************************************************/
+#travaux {
+  min-height: 100vh;
+}
+
+.travaux-title {
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+/* card travaux *******************************************************/
+.card {
+  border-radius: 10px;
+  background-color: #c0bebe;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 6px 12px;
+  transition: box-shadow 0.3s ease;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .card-body .btn {
   align-self: flex-end;
+  padding-right: 0.5em;
 }
-.card-image {
-  background-size: cover;
-  background-position: center;
-  opacity: 0.8;
+
+.card-img-top {
+  height: 60%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
+
 .card-fixed-height {
   height: 400px;
 }
 
-/* Footer */
+#travaux .card-text {
+  margin: 0;
+}
+
+/* Modal travaux ******************************************************/
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-title {
+  color: #ff6600 !important;
+}
+
+.modal-header .btn-close {
+  background-color: #ff6600;
+  margin-right: 5px;
+}
+
+.carousel-item {
+  height: 400px;
+  padding: auto;
+}
+
+.carousel-control-next-icon.custom-color {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff6600'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon.custom-color {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff6600'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 .708-0.708l5.646-5.646a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/* Contact ************************************************************/
+#contact {
+  min-height: 60vh;
+}
+
+.contact-title {
+  padding-bottom: 1em;
+}
+
+#contact p {
+  font-size: large;
+}
+
+.email {
+  color: #ff6600;
+  font-size: 1.5em;
+}
+
+/* Footer  ************************************************************/
 footer {
   padding: 20px;
 }
+
 .bi {
   font-size: 1.5em;
   color: white;
   margin: 5px 10px;
+  text-decoration: none;
 }
+
+.bi:hover {
+  color: #ff6600;
+}
+
 .developpeur {
   color: #ff6600;
   font-size: larger;
