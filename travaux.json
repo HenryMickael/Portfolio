@@ -1,8 +1,8 @@
 [
   {
-    "image1": "/img/imgSite/1.png",
-    "image2": "/img/imgSite/4.png",
-    "image3": "/img/imgSite/3.png",
+    "image1": "img/imgSite/1.png",
+    "image2": "img/imgSite/4.png",
+    "image3": "img/imgSite/3.png",
     "nom": "LaBonneAffaire",
     "description": "( En construction ) Clone de Leboncoin ou Amazon ",
     "descriptionComplete": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi alias vero id officia facere amet a rem eos libero voluptate, sit voluptas, corporis officiis natus optio dignissimos, corrupti eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi alias vero id officia facere amet a rem eos libero voluptate, sit voluptas, corporis officiis natus optio dignissimos, corrupti eum.",
@@ -11,9 +11,9 @@
     "techUtilise": ["React", "Sass", "NodeJs"]
   },
   {
-    "image1": "/img/imgSite/2.png",
-    "image2": "/img/imgSite/5.png",
-    "image3": "/img/imgSite/6.png",
+    "image1": "img/imgSite/2.png",
+    "image2": "img/imgSite/5.png",
+    "image3": "img/imgSite/6.png",
     "nom": "Elite Cut & Color",
     "description": "( En construction ) Site vitrine d'un salon de coiffure",
     "descriptionComplete": "Texte de présentation du site avec explication a faire",
@@ -22,9 +22,9 @@
     "techUtilise": ["Bootstrap", "Sass", "NodeJs"]
   },
   {
-    "image1": "/img/imgSite/7.png",
-    "image2": "/img/imgSite/8.png",
-    "image3": "/img/imgSite/9.png",
+    "image1": "img/imgSite/7.png",
+    "image2": "img/imgSite/8.png",
+    "image3": "img/imgSite/9.png",
     "nom": "Nft World",
     "description": "( En construction ) Site création de NFT",
     "descriptionComplete": "Texte de présentation du site avec explication a faire",
