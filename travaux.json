@@ -11,25 +11,25 @@
     "techUtilise": ["React", "Sass", "NodeJs"]
   },
   {
-    "image1": "img/imgSite/2.png",
-    "image2": "img/imgSite/5.png",
-    "image3": "img/imgSite/6.png",
-    "nom": "Salon de coiffure ",
-    "description": "( En construction ) Site vitrine d'un salon de coiffure",
-    "descriptionComplete": "Texte de présentation du site avec explication a faire",
-    "lienSite": "lien-site1",
-    "lienGithub": "https://github.com/HenryMickael/",
-    "techUtilise": ["Bootstrap", "Sass", "NodeJs"]
+    "image1": "img/imgSite/ImgSalon/saloncoiffure1.webp",
+    "image2": "img/imgSite/ImgSalon/saloncoiffure2.webp",
+    "image3": "img/imgSite/ImgSalon/saloncoiffure3.webp",
+    "nom": "Elite cut & color",
+    "description": "Site vitrine d'un salon de coiffure",
+    "descriptionComplete": "Site vitrine d'un salon de coiffure. Pour réaliser se site j'ai utilisé Bootstrap, avec un peu de Javascript pour la gestion des modals. J'ai aussi utilisé l'api de GoogleMap pour la localisation du salon",
+    "lienSite": "https://henrymickael.github.io/ElitebyAS/",
+    "lienGithub": "https://github.com/HenryMickael/ElitebyAS",
+    "techUtilise": ["Bootstrap", "Javascript", "Api"]
   },
   {
-    "image1": "img/imgSite/7.png",
-    "image2": "img/imgSite/8.png",
-    "image3": "img/imgSite/9.png",
-    "nom": "Nft World",
-    "description": "( En construction ) Site création de NFT",
-    "descriptionComplete": "Texte de présentation du site avec explication a faire",
+    "image1": "img/imgSite/ImgNft/nftanimals1.webp",
+    "image2": "img/imgSite/ImgNft/nftanimals2.webp",
+    "image3": "img/imgSite/ImgNft/nftanimals3.webp",
+    "nom": "NFT Funny Animals",
+    "description": "Projet création de NFT ( Tuto )",
+    "descriptionComplete": "Projet personnel visant à comprendre le fonctionnement d'un site de mint de NFT. J'ai suivi un tutoriel pour ce projet, mais je n'ai pas encore acquis toutes les notions nécessaires. Cependant, j'ai une compréhension globale du sujet.",
     "lienSite": "lien site nft a mettre",
     "lienGithub": "https://github.com/HenryMickael/Portfolio-architecte-sophie-bluel",
-    "techUtilise": ["React", "Sass", "NodeJs"]
+    "techUtilise": ["React", "Gestion smart contract", "NodeJs/Yarn"]
   }
 ]

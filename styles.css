@@ -159,7 +159,7 @@ h2 {
 /* card travaux *******************************************************/
 .card {
   border-radius: 10px;
-  background-color: #c0bebe;
+  background-color: #e4e4e4;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .card:hover {
