@@ -30,25 +30,25 @@ fetch("travaux.json")
       <div class="modal-body">
         <div class="carousel-container d-flex align-items-center justify-content-center">
           <div id="carouselExample-${index}" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner d-flex align-items-center">
-              <div class="carousel-item active ">
+            <div class="carousel-inner d-flex align-items-center"  >
+              <div class="carousel-item active "  >
                 <img src="${
                   travail.image1
                 }" class="img-fluid carousel-image d-block h-100" alt="Photo de ${
         travail.image1
       }">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item " >
                 <img src="${
                   travail.image2
                 }" class="img-fluid carousel-image d-block h-100" alt="Photo de ${
         travail.image2
       }">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item " >
                 <img src="${
                   travail.image3
-                }" class="img-fluid carousel-image d-block -100" alt="Photo de ${
+                }" class="img-fluid carousel-image d-block h-100" alt="Photo de ${
         travail.image3
       }">
               </div>

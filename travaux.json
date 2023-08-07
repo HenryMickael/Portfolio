@@ -1,14 +1,14 @@
 [
   {
-    "image1": "img/imgSite/1.png",
-    "image2": "img/imgSite/4.png",
-    "image3": "img/imgSite/3.png",
-    "nom": "LaBonneAffaire",
-    "description": "( En construction ) Clone de Leboncoin ou Amazon ",
-    "descriptionComplete": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi alias vero id officia facere amet a rem eos libero voluptate, sit voluptas, corporis officiis natus optio dignissimos, corrupti eum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi alias vero id officia facere amet a rem eos libero voluptate, sit voluptas, corporis officiis natus optio dignissimos, corrupti eum.",
-    "lienSite": "lien kesa a mettre",
-    "lienGithub": "https://github.com/HenryMickael/kesa",
-    "techUtilise": ["React", "Sass", "NodeJs"]
+    "image1": "img/imgSite/ImgLBC/Leboncoinacceuil.webp",
+    "image2": "img/imgSite/ImgLBC/leboncoinannonce.webp",
+    "image3": "img/imgSite/ImgLBC/leboncoindepot.webp",
+    "nom": "La Bonne Affaire",
+    "description": "Type Leboncoin",
+    "descriptionComplete": "J'ai créé ce site dans le but de me perfectionner dans l'utilisation de React et dans l'association du backend et du frontend. Il s'agit d'un projet évolutif, car j'ai l'intention d'y intégrer plusieurs fonctionnalités telles qu'un moyen de paiement par carte bancaire ou PayPal, un chat en direct, ainsi qu'un système de paiement en cryptomonnaie.",
+    "lienSite": "https://labonneaffaire.vercel.app/",
+    "lienGithub": "https://github.com/HenryMickael/Leboncoin",
+    "techUtilise": ["React", "Javascript", "NodeJs"]
   },
   {
     "image1": "img/imgSite/ImgSalon/saloncoiffure1.webp",
@@ -22,14 +22,14 @@
     "techUtilise": ["Bootstrap", "Javascript", "Api"]
   },
   {
-    "image1": "img/imgSite/ImgNft/nftanimals1.webp",
-    "image2": "img/imgSite/ImgNft/nftanimals2.webp",
-    "image3": "img/imgSite/ImgNft/nftanimals3.webp",
-    "nom": "NFT Funny Animals",
-    "description": "Projet création de NFT ( Tuto )",
-    "descriptionComplete": "Projet personnel visant à comprendre le fonctionnement d'un site de mint de NFT. J'ai suivi un tutoriel pour ce projet, mais je n'ai pas encore acquis toutes les notions nécessaires. Cependant, j'ai une compréhension globale du sujet.",
-    "lienSite": "lien site nft a mettre",
-    "lienGithub": "https://github.com/HenryMickael/Portfolio-architecte-sophie-bluel",
-    "techUtilise": ["React", "Gestion smart contract", "NodeJs/Yarn"]
+    "image1": "img/imgSite/ImgKasa/Kasaacceuil.webp",
+    "image2": "img/imgSite/ImgKasa/Kasaappart.webp",
+    "image3": "img/imgSite/ImgKasa/Kasapropos.webp",
+    "nom": "Kasa",
+    "description": "Projet scolaire d'un site immobilier",
+    "descriptionComplete": "Ce projet scolaire d'Openclasserooms m'a permis d'acquérir les bases essentielles de React. Il repose sur l'utilisation d'un fichier JSON plutôt que d'une API. Grâce à ce site, j'ai pu découvrir les premières spécificités de React.",
+    "lienSite": "https://kasa-sand.vercel.app/",
+    "lienGithub": "https://github.com/HenryMickael/kesa",
+    "techUtilise": ["React", "Javascript", "NodeJs"]
   }
 ]

@@ -201,7 +201,8 @@ h2 {
   margin-right: 5px;
 }
 .carousel-item {
-  height: 400px;
+  /* height: 400px; */
+  height: auto;
   padding: auto;
 }
 .carousel-control-next-icon.custom-color {
@@ -245,3 +246,9 @@ footer {
   color: #ff6600;
   font-size: larger;
 }
+/* @media (max-width: 650px) {
+  .carousel-item {
+    height: auto;
+    padding: 0;
+  }
+} */
